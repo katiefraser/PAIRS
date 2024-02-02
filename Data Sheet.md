@@ -14,31 +14,24 @@ Jump to section:
 
 ## Motivation
 
-_The questions in this section are primarily intended to encourage dataset creators
-to clearly articulate their reasons for creating the dataset and to promote transparency
-about funding interests._
+The advent of multimodal chat models, which can answer arbitrary questions about images uploaded by the user, is exciting and 
 
 ### For what purpose was the dataset created? 
 
-_Was there a specific task in mind? Was there a specific gap that needed to be filled?
-Please provide a description._
+We created this dataset for the purpose of measuring gender and racial biases in multimodal large language--vision models (LLVMs). We wanted a set of images that was as similar as possible, except in the variables of interest (two genders: male and female, and two skin colours: light and dark). [Previous attempts](https://arxiv.org/abs/2106.08503) to curate such pairs of images from photographic corpora had mixed success, due to the low representation of certain groups and the unavoidable variation in naturally-occuring images. Therefore, we used the image generation tool [Midjourney](https://www.midjourney.com/) to create our parallel image dataset.
 
 ### Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?
 
+The dataset was created by Kathleen Fraser and Svetlana Kiritchenko, while working in the Text Analytics group at the National Research Council Canada.
+
 ### Who funded the creation of the dataset? 
 
-_If there is an associated grant, please provide the name of the grantor and the grant
-name and number._
+The dataset creation was funded by the National Research Council Canada.
 
 ### Any other comments?
 
 ## Composition
 
-_Most of these questions are intended to provide dataset consumers with the
-information they need to make informed decisions about using the dataset for
-specific tasks. The answers to some of these questions reveal information
-about compliance with the EU’s General Data Protection Regulation (GDPR) or
-comparable regulations in other jurisdictions._
 
 ### What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)?
 
