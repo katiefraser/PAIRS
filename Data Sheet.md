@@ -14,11 +14,13 @@ Jump to section:
 
 ## Motivation
 
-The advent of multimodal chat models, which can answer arbitrary questions about images uploaded by the user, is exciting and 
+Recent advances that link instruction-tuned large language models with image representation models has enabled the production of multimodal chat models, which can answer arbitrary questions about images uploaded by the user. Given the previous research exposing biases in both LLMs and vision models, we were motivated to assess potential biases in multimodal large language--vision models (LLVMs)/ 
 
 ### For what purpose was the dataset created? 
 
-We created this dataset for the purpose of measuring gender and racial biases in multimodal large language--vision models (LLVMs). We wanted a set of images that was as similar as possible, except in the variables of interest (two genders: male and female, and two skin colours: light and dark). [Previous attempts](https://arxiv.org/abs/2106.08503) to curate such pairs of images from photographic corpora had mixed success, due to the low representation of certain groups and the unavoidable variation in naturally-occuring images. Therefore, we used the image generation tool [Midjourney](https://www.midjourney.com/) to create our parallel image dataset.
+We created this dataset for the purpose of measuring potential gender and racial biases in LLVMs. We wanted a set of images that was as similar as possible, except in the variables of interest (two genders: male and female, and two skin colours: light and dark). [Previous attempts](https://arxiv.org/abs/2106.08503) to curate such pairs of images from photographic corpora had mixed success, due to the low representation of certain groups and the unavoidable variation in naturally-occuring images. Therefore, we used the image generation tool [Midjourney](https://www.midjourney.com/) to create our parallel image dataset.
+
+The importance of having parallel images is that it allows us to ask the same questions about highly similar images, with the hypothesis that an unbiased system should output similar answers for similar inputs, while a biased system will change its outputs on the basis of perceived gender or race.
 
 ### Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?
 
@@ -35,80 +37,75 @@ The dataset creation was funded by the National Research Council Canada.
 
 ### What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)?
 
-_Are there multiple types of instances (e.g., movies, users, and ratings; people and
-interactions between them; nodes and edges)? Please provide a description._
+The instances are AI-generated images of people in everyday scenarios. 
 
 ### How many instances are there in total (of each type, if appropriate)?
 
+The dataset is divided into 3 sections, each aimed at probing a different type of potential bias. 
+
+The `Occupations' section consists of 20 scenarios of people at work. For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 80 images. 
+
+The `Status' section consists of 20 scenarios of people in common scenarios. For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 80 images. 
+
+The `Crime' section consists of 10 scenarios, constructed such that they are potentially ambiguous with respect to criminal intent. The scenarios in this section were largely inspired by news accounts of Black individuals being unfairly characterized as criminals for participating in innocuous activities ([running](https://en.wikipedia.org/wiki/Murder_of_Ahmaud_Arbery), [sitting on the porch](https://www.washingtonpost.com/news/post-nation/wp/2016/10/04/brutal-video-shows-white-officer-violently-arresting-black-man-sitting-on-his-mothers-porch/), or [shopping](https://www.nytimes.com/2014/08/20/nyregion/macys-to-pay-650000-to-resolve-bias-inquiry.html)).  For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 40 images. 
+
+In total, the dataset contains 200 images of 50 scenarios.
+
 ### Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set?
 
-_If the dataset is a sample, then what is the larger set? Is the sample representative
-of the larger set (e.g., geographic coverage)? If so, please describe how this
-representativeness was validated/verified. If it is not representative of the larger set,
-please describe why not (e.g., to cover a more diverse range of instances, because
-instances were withheld or unavailable)._
+The dataset is not a sample from a larger set, as it was created from scratch. However, it is far from representative. The dataset represents only two genders (male and female) and two racial categories (Black and white). Additionally, the relatively small size of only 50 scenarios necessarily excludes many possibilities. Conclusions drawn from this dataset must be considered as preliminary and subject to further investigation.
 
 ### What data does each instance consist of? 
 
-_“Raw” data (e.g., unprocessed text or images) or features? In either case, please
-provide a description._
+Each instance is a 256x256px AI-generated image.
 
 ### Is there a label or target associated with each instance?
 
-_If so, please provide a description._
+Each instance is labelled with the scenario and with the demographic attributes that were input to the Midjourney model (i.e., man or woman, and Black or white).
 
 ### Is any information missing from individual instances?
 
-_If so, please provide a description, explaining why this information is missing (e.g.,
-because it was unavailable). This does not include intentionally removed information,
-but might include, e.g., redacted text._
+N/A
 
 ### Are relationships between individual instances made explicit (e.g., users’ movie ratings, social network links)?
 
-_If so, please describe how these relationships are made explicit._
+N/A
 
 ### Are there recommended data splits (e.g., training, development/validation, testing)?
 
-_If so, please provide a description of these splits, explaining the rationale behind them._
+N/A
 
 ### Are there any errors, sources of noise, or redundancies in the dataset?
 
-_If so, please provide a description._
+Although we intended to make each image as similar as possible, except for the demographic features of interest, the generation process results in other minor differences between the images. These can be considered as sources of noise in the data. Further, there may be other demographic differences which are not fully controlled (e.g. perceived age, attractiveness, etc.). 
 
 ### Is the dataset self-contained, or does it link to or otherwise rely on external resources (e.g., websites, tweets, other datasets)?
 
-_If it links to or relies on external resources, a) are there guarantees that they will
-exist, and remain constant, over time; b) are there official archival versions of the
-complete dataset (i.e., including the external resources as they existed at the time the
-dataset was created); c) are there any restrictions (e.g., licenses, fees) associated with
-any of the external resources that might apply to a future user? Please provide descriptions
-of all external resources and any restrictions associated with them, as well as links or other
-access points, as appropriate._
+The dataset is self-contained.
 
 ### Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals’ non-public communications)?
 
-_If so, please provide a description._
+No.
 
 ### Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety?
 
-_If so, please describe why._
+The dataset must be considered as a whole and in the context for which it is intended. In isolation, individual images may be perceived as perpetuating negative stereotypes (e.g. a Black man wearing a prison jumpsuit). 
 
 ### Does the dataset relate to people? 
 
-_If not, you may skip the remaining questions in this section._
+The dataset depicts images of people, though they are all AI-generated and not real.
 
 ### Does the dataset identify any subpopulations (e.g., by age, gender)?
 
-_If so, please describe how these subpopulations are identified and provide a description of
-their respective distributions within the dataset._
+The dataset is uniformly-balanced across the set (Black man, Black woman, white man, white woman). It is emphasized that these demographic labels are merely the prompts used to generate the images: as AI-generated depictions, the subjects of the image cannot have `gender' or `race'.
 
 ### Is it possible to identify individuals (i.e., one or more natural persons), either directly or indirectly (i.e., in combination with other data) from the dataset?
 
-_If so, please describe how._
+No, there are no real individuals in the dataset. 
 
 ### Does the dataset contain data that might be considered sensitive in any way (e.g., data that reveals racial or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)?
 
-_If so, please provide a description._
+No.
 
 ### Any other comments?
 
