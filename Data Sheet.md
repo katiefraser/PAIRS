@@ -109,6 +109,10 @@ No.
 
 ### Any other comments?
 
+Due to the significant manual effort involved in coming up with plausible ambiguous scenarios and generating realistic and highly-similar images for all four combinations of gender–race, the PAIRS dataset is quite small (200 images covering 50 scenarios). In addition to the general issue of trying to draw conclusions from a small data sample, this also means that many social groups and scenarios are not represented. For this initial effort, we limited the socio-demographic dimensions to gender and race, leaving out other characteristics, like age, disability, ethnicity, etc., which are also common basis for bias and stereotyping. Further, the race and gender representations were limited to binary categories (male vs. female, Black vs. white). Future work should focus on extending the set of images to more adequately cover the full spectrum of gender identity, race, and other socio- demographic characteristics. We hope that by releasing the dataset now, we can encourage other researchers to contribute to growing the dataset as well.
+
+Furthermore, despite our best efforts, parallel images for the four demographic groups in each scenario might have small differences (beyond the intended differences in visual cues for gender and/or race), that may be imperceptible or inconsequential for humans, but that can alter the behaviour of the large language--vision models. Care should be taken in interpreting any results on these data.
+
 ## Collection process
 
 ### How was the data associated with each instance acquired?
@@ -206,6 +210,9 @@ Not that we are aware. We do note that Midjourney has already released a newer v
 The dataset should not be used to attempt to predict the race or gender of a depicted pereson.
 
 ### Any other comments?
+
+
+
 
 ## Distribution
 
