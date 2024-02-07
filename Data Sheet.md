@@ -274,3 +274,5 @@ Yes.
 Yes. Contributions are welcome and should be emailed to Dr. Fraser (contact info above).
 
 ### Any other comments?
+
+Thank you to Christian Garbin for proving the datasheet template [https://github.com/fau-masters-collected-works-cgarbin/datasheet-for-dataset-template](https://github.com/fau-masters-collected-works-cgarbin/datasheet-for-dataset-template).
