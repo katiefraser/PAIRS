@@ -97,7 +97,7 @@ The dataset depicts images of people, though they are all AI-generated and not r
 
 ### Does the dataset identify any subpopulations (e.g., by age, gender)?
 
-The dataset is uniformly-balanced across the set (Black man, Black woman, white man, white woman). It is emphasized that these demographic labels are merely the prompts used to generate the images: as AI-generated depictions, the subjects of the image cannot have `gender' or `race'.
+The dataset is uniformly-balanced across the set (Black man, Black woman, white man, white woman). It is emphasized that these demographic labels are merely the prompts used to generate the images: as AI-generated depictions, the subjects of the image cannot have "gender" or "race."
 
 ### Is it possible to identify individuals (i.e., one or more natural persons), either directly or indirectly (i.e., in combination with other data) from the dataset?
 
@@ -115,7 +115,7 @@ No.
 
 The first stage of of data generation involved coming up with potentially ambiguous visual scenarios (e.g., a person wearing scrubs can be interpreted as a doctor or a nurse; a person holding a baseball bat can be interpreted as an athlete or a threat). This was a creative process involving review of the literature, popular press, and other sources of information.
 
-Once a scenario had been determined, the second stage of data generation involved using the [Midjourney](https://www.midjourney.com/) text-to-image generation platform to generate an initial image relating to the scenario, for example by prompting for `a photo of a black woman wearing scrubs.' Once an acceptable image was generated, we used the `Vary (subtle)' function to reprompt for, e.g., `a photo of a black man wearing scrubs.' This resulted in outputs that were highly similar to the initial image, but with the changes specified in the prompt. This process was repeated until we obtained 4 highly-similar images for each scenario, depicting a white woman, a white man, a Black woman, and a Black man.
+Once a scenario had been determined, the second stage of data generation involved using the [Midjourney](https://www.midjourney.com/) text-to-image generation platform to generate an initial image relating to the scenario, for example by prompting for `a photo of a black woman wearing scrubs.` Once an acceptable image was generated, we used the "Vary (subtle)" function to reprompt for, e.g., `a photo of a black man wearing scrubs.` This resulted in outputs that were highly similar to the initial image, but with the changes specified in the prompt. This process was repeated until we obtained 4 highly-similar images for each scenario, depicting a white woman, a white man, a Black woman, and a Black man.
 
 ### What mechanisms or procedures were used to collect the data (e.g., hardware apparatus or sensor, manual human curation, software program, software API)?
 
@@ -139,7 +139,7 @@ N/A
 
 ### Does the dataset relate to people?
 
-While the dataset depicts images of people, they are AI-generated and not real people/
+While the dataset depicts images of people, they are AI-generated and not real people.
 
 ### Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (e.g., websites)?
 
@@ -185,14 +185,13 @@ N/A
 
 ## Uses
 
-
 ### Has the dataset been used for any tasks already?
 
-_If so, please provide a description._
+The dataset was used to investigate potential gender- and/or race-based bias in multimodal language-vision models.
 
 ### Is there a repository that links to any or all papers or systems that use the dataset?
 
-_If so, please provide a link or other access point._
+No.
 
 ### What (other) tasks could the dataset be used for?
 
@@ -214,62 +213,59 @@ _If so, please provide a description._
 
 ### Will the dataset be distributed to third parties outside of the entity (e.g., company, institution, organization) on behalf of which the dataset was created? 
 
-_If so, please provide a description._
+Yes. 
 
 ### How will the dataset will be distributed (e.g., tarball on website, API, GitHub)?
 
-_Does the dataset have a digital object identifier (DOI)?_
+The dataset is available on GitHub at [https://github.com/katiefraser/PAIRS/](https://github.com/katiefraser/PAIRS/).
 
 ### When will the dataset be distributed?
 
+The dataset is available as of March 1, 2024.
+
 ### Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?
 
-_If so, please describe this license and/or ToU, and provide a link or other access point to,
-or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated
-with these restrictions._
+The dataset is freely available for any use. 
 
 ### Have any third parties imposed IP-based or other restrictions on the data associated with the instances?
 
-_If so, please describe these restrictions, and provide a link or other access point to, or
-otherwise reproduce, any relevant licensing terms, as well as any fees associated with these
-restrictions._
+The data was generated using Midjourney. Under the Midjourney terms of service, the researchers who generated the data are now the owners of the data and are free to distribute them as they wish. 
 
 ### Do any export controls or other regulatory restrictions apply to the dataset or to individual instances?
 
-_If so, please describe these restrictions, and provide a link or other access point to, or otherwise
-reproduce, any supporting documentation._
+No.
 
 ### Any other comments?
 
 ## Maintenance
 
-_These questions are intended to encourage dataset creators to plan for dataset maintenance
-and communicate this plan with dataset consumers._
 
 ### Who is supporting/hosting/maintaining the dataset?
 
+The dataset will be maintained by Kathleen Fraser, dataset owner. 
+
 ### How can the owner/curator/manager of the dataset be contacted (e.g., email address)?
+
+Dr. Fraser may be reached by email: kathleen.fraser@nrc-cnrc.gc.ca.
 
 ### Is there an erratum?
 
-_If so, please provide a link or other access point._
+No.
 
 ### Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete instances)?
 
-_If so, please describe how often, by whom, and how updates will be communicated to users (e.g., mailing list, GitHub)?_
+The dataset may be updated in the future to include other scenarios and groups of people. 
 
 ### If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (e.g., were individuals in question told that their data would be retained for a fixed period of time and then deleted)?
 
-_If so, please describe these limits and explain how they will be enforced._
+N/A
 
 ### Will older versions of the dataset continue to be supported/hosted/maintained?
 
-_If so, please describe how. If not, please describe how its obsolescence will be communicated to users._
+Yes.
 
 ### If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so?
 
-_If so, please provide a description. Will these contributions be validated/verified? If so,
-please describe how. If not, why not? Is there a process for communicating/distributing these
-contributions to other users? If so, please provide a description._
+Yes. Contributions are welcome and should be emailed to Dr. Fraser (contact info above).
 
 ### Any other comments?
