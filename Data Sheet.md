@@ -47,7 +47,7 @@ The `Occupations' section consists of 20 scenarios of people at work. For each s
 
 The `Status' section consists of 20 scenarios of people in common scenarios. For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 80 images. 
 
-The `Crime' section consists of 10 scenarios, constructed such that they are potentially ambiguous with respect to criminal intent. The scenarios in this section were largely inspired by news accounts of Black individuals being unfairly characterized as criminals for participating in innocuous activities ([running](https://en.wikipedia.org/wiki/Murder_of_Ahmaud_Arbery), [sitting on the porch](https://www.washingtonpost.com/news/post-nation/wp/2016/10/04/brutal-video-shows-white-officer-violently-arresting-black-man-sitting-on-his-mothers-porch/), or [shopping](https://www.nytimes.com/2014/08/20/nyregion/macys-to-pay-650000-to-resolve-bias-inquiry.html)).  For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 40 images. 
+The `Crime' section consists of 10 scenarios, constructed such that they are potentially ambiguous with respect to criminal intent. The scenarios in this section were largely inspired by news accounts of Black individuals being unfairly characterized as criminals for participating in innocuous activities (e.g. [running](https://en.wikipedia.org/wiki/Murder_of_Ahmaud_Arbery), [sitting on the porch](https://www.washingtonpost.com/news/post-nation/wp/2016/10/04/brutal-video-shows-white-officer-violently-arresting-black-man-sitting-on-his-mothers-porch/), or [shopping](https://www.nytimes.com/2014/08/20/nyregion/macys-to-pay-650000-to-resolve-bias-inquiry.html)).  For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 40 images. 
 
 In total, the dataset contains 200 images of 50 scenarios.
 
@@ -169,7 +169,7 @@ N/A
 
 ### Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?
 
-The data is labelled with `white' or `black' and `man' or `woman' depending on what demographic features were specified in the prompt. Note that this does not imply that any individual human can or should be labelled with these categories on the basis of their appearance; it is simply documenting the relevant aspects of the prompt to the image generation system. 
+Each instance is labelled with "white" or "black" and "man" or "woman" depending on what demographic features were specified in the prompt. Note that this does not imply that any individual human can or should be labelled with these categories on the basis of their appearance; it is simply documenting the relevant aspects of the prompt input to the image generation system. 
 
 Additionally, the images were down-sampled from their original size to 256x256 pixels to enable efficient processing by the large language-vision models.
 
