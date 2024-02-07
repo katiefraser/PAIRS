@@ -53,7 +53,7 @@ In total, the dataset contains 200 images of 50 scenarios.
 
 ### Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set?
 
-The dataset is not a sample from a larger set, as it was created from scratch. However, it is far from representative. The dataset represents only two genders (male and female) and two racial categories (Black and white). Additionally, the relatively small size of only 50 scenarios necessarily excludes many possibilities. Conclusions drawn from this dataset must be considered as preliminary and subject to further investigation.
+The dataset was generated, rather than sampled. However, it is far from representative. The dataset represents only two genders (male and female) and two racial categories (Black and white). Additionally, the relatively small size of only 50 scenarios necessarily excludes many possibilities. Conclusions drawn from this dataset must be considered as preliminary and subject to further investigation.
 
 ### What data does each instance consist of? 
 
@@ -111,93 +111,80 @@ No.
 
 ## Collection process
 
-_\[T\]he answers to questions here may provide information that allow others to
-reconstruct the dataset without access to it._
-
 ### How was the data associated with each instance acquired?
 
-_Was the data directly observable (e.g., raw text, movie ratings), reported by subjects (e.g.,
-survey responses), or indirectly inferred/derived from other data (e.g., part-of-speech tags,
-model-based guesses for age or language)? If data was reported by subjects or indirectly
-inferred/derived from other data, was the data validated/verified? If so, please describe how._
+The first stage of of data generation involved coming up with potentially ambiguous visual scenarios (e.g., a person wearing scrubs can be interpreted as a doctor or a nurse; a person holding a baseball bat can be interpreted as an athlete or a threat). This was a creative process involving review of the literature, popular press, and other sources of information.
+
+Once a scenario had been determined, the second stage of data generation involved using the [Midjourney](https://www.midjourney.com/) text-to-image generation platform to generate an initial image relating to the scenario, for example by prompting for `a photo of a black woman wearing scrubs.' Once an acceptable image was generated, we used the `Vary (subtle)' function to reprompt for, e.g., `a photo of a black man wearing scrubs.' This resulted in outputs that were highly similar to the initial image, but with the changes specified in the prompt. This process was repeated until we obtained 4 highly-similar images for each scenario, depicting a white woman, a white man, a Black woman, and a Black man.
 
 ### What mechanisms or procedures were used to collect the data (e.g., hardware apparatus or sensor, manual human curation, software program, software API)?
 
-_How were these mechanisms or procedures validated?_
+The software used was Midjourney v4 and v5.
 
 ### If the dataset is a sample from a larger set, what was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)?
 
+N/A
+
 ### Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?
+
+Two computer science researchers were involved in the data generation process as part of their regular salaried positions.
 
 ### Over what timeframe was the data collected?
 
-_Does this timeframe match the creation timeframe of the data associated with the instances (e.g.
-recent crawl of old news articles)? If not, please describe the timeframe in which the data
-associated with the instances was created._
+The data was generated over several weeks from May--August 2023.
 
 ### Were any ethical review processes conducted (e.g., by an institutional review board)?
 
-_If so, please provide a description of these review processes, including the outcomes, as well as
-a link or other access point to any supporting documentation._
+N/A
 
 ### Does the dataset relate to people?
 
-_If not, you may skip the remainder of the questions in this section._
+While the dataset depicts images of people, they are AI-generated and not real people/
 
 ### Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (e.g., websites)?
 
+N/A
+
 ### Were the individuals in question notified about the data collection?
 
-_If so, please describe (or show with screenshots or other information) how notice was provided,
-and provide a link or other access point to, or otherwise reproduce, the exact language of the
-notification itself._
+N/A
 
 ### Did the individuals in question consent to the collection and use of their data?
 
-_If so, please describe (or show with screenshots or other information) how consent was
-requested and provided, and provide a link or other access point to, or otherwise reproduce, the
-exact language to which the individuals consented._
+N/A
 
 ### If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future or for certain uses?
 
-_If so, please provide a description, as well as a link or other access point to the mechanism
-(if appropriate)._
+N/A
 
 ### Has an analysis of the potential impact of the dataset and its use on data subjects (e.g., a data protection impact analysis) been conducted?
 
-_If so, please provide a description of this analysis, including the outcomes, as well as a link
-or other access point to any supporting documentation._
+N/A
 
 ### Any other comments?
 
 ## Preprocessing/cleaning/labeling
 
-_The questions in this section are intended to provide dataset consumers with the information
-they need to determine whether the “raw” data has been processed in ways that are compatible
-with their chosen tasks. For example, text that has been converted into a “bag-of-words” is
-not suitable for tasks involving word order._
+
 
 ### Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?
 
-_If so, please provide a description. If not, you may skip the remainder of the questions in
-this section._
+The data is labelled with `white' or `black' and `man' or `woman' depending on what demographic features were specified in the prompt. Note that this does not imply that any individual human can or should be labelled with these categories on the basis of their appearance; it is simply documenting the relevant aspects of the prompt to the image generation system. 
+
+Additionally, the images were down-sampled from their original size to 256x256 pixels to enable efficient processing by the large language-vision models.
 
 ### Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?
 
-_If so, please provide a link or other access point to the “raw” data._
+N/A
 
 ### Is the software used to preprocess/clean/label the instances available?
 
-_If so, please provide a link or other access point._
+N/A
 
 ### Any other comments?
 
 ## Uses
 
-_These questions are intended to encourage dataset creators to reflect on the tasks
-for which the dataset should and should not be used. By explicitly highlighting these tasks,
-dataset creators can help dataset consumers to make informed decisions, thereby avoiding
-potential risks or harms._
 
 ### Has the dataset been used for any tasks already?
 
