@@ -1,4 +1,4 @@
-# Datasheet for dataset "add dataset name here"
+# Datasheet for dataset PAIRS (PArallel Images for eveRyday Scenarios)
 
 Questions from the [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) paper, v7.
 
@@ -14,7 +14,7 @@ Jump to section:
 
 ## Motivation
 
-Recent advances that link instruction-tuned large language models with image representation models has enabled the production of multimodal chat models, which can answer arbitrary questions about images uploaded by the user. Given the previous research exposing biases in both LLMs and vision models, we were motivated to assess potential biases in multimodal large language--vision models (LLVMs)/ 
+Recent advances that link instruction-tuned large language models with image representation models has enabled the production of multimodal chat models, which can answer arbitrary questions about images uploaded by the user. Given the previous research exposing biases in both LLMs and vision models, we were motivated to assess potential biases in multimodal large language--vision models (LLVMs). 
 
 ### For what purpose was the dataset created? 
 
