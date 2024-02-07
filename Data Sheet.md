@@ -14,7 +14,7 @@ Jump to section:
 
 ## Motivation
 
-Recent advances that link instruction-tuned large language models with image representation models has enabled the production of multimodal chat models, which can answer arbitrary questions about images uploaded by the user. Given the previous research exposing biases in both LLMs and vision models, we were motivated to assess potential biases in multimodal large language--vision models (LLVMs). 
+Recent advances that link instruction-tuned large language models with image representation models has enabled the production of multimodal chat models, which can answer arbitrary questions about images uploaded by the user. Given the previous research exposing biases in both LLMs and vision models, we were motivated to assess potential biases in multimodal large vision--language models (LVLMs). 
 
 ### For what purpose was the dataset created? 
 
@@ -171,7 +171,7 @@ N/A
 
 Each instance is labelled with "white" or "black" and "man" or "woman" depending on what demographic features were specified in the prompt. Note that this does not imply that any individual human can or should be labelled with these categories on the basis of their appearance; it is simply documenting the relevant aspects of the prompt input to the image generation system. 
 
-Additionally, the images were down-sampled from their original size to 256x256 pixels to enable efficient processing by the large language-vision models.
+Additionally, the images were down-sampled from their original size to 256x256 pixels to enable efficient processing by the large vision--language models.
 
 ### Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?
 
@@ -187,7 +187,7 @@ N/A
 
 ### Has the dataset been used for any tasks already?
 
-The dataset was used to investigate potential gender- and/or race-based bias in multimodal language-vision models.
+The dataset was used to investigate potential gender- and/or race-based bias in multimodal vision--language models.
 
 ### Is there a repository that links to any or all papers or systems that use the dataset?
 
@@ -195,17 +195,15 @@ No.
 
 ### What (other) tasks could the dataset be used for?
 
+The dataset should be used for its intended purpose of testing the various capabilities and drawbacks (including biases) of computer vision and multimodal models.
+
 ### Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses?
 
-_For example, is there anything that a future user might need to know to avoid uses that
-could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of
-service issues) or other undesirable harms (e.g., financial harms, legal risks) If so, please
-provide a description. Is there anything a future user could do to mitigate these undesirable
-harms?_
+Not that we are aware. We do note that Midjourney has already released a newer version of their software and the images contained in this dataset may not represent the cutting-edge in terms of photo-realism for future use cases.
 
 ### Are there tasks for which the dataset should not be used?
 
-_If so, please provide a description._
+The dataset should not be used to attempt to predict the race or gender of a depicted pereson.
 
 ### Any other comments?
 
