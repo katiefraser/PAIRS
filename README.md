@@ -15,11 +15,11 @@ Example:
 
 The dataset is divided into 3 sections, each aimed at probing a different type of potential bias. 
 
-The `Occupations' section consists of 20 scenarios of people at work. For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 80 images. 
+The *Occupations* section consists of 20 scenarios of people at work. For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 80 images. 
 
-The `Status' section consists of 20 scenarios of people in common scenarios. For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 80 images. 
+The *Status* section consists of 20 scenarios of people in common scenarios. For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 80 images. 
 
-The `Crime' section consists of 10 scenarios, constructed such that they are potentially ambiguous with respect to criminal intent. The scenarios in this section were largely inspired by news accounts of Black individuals being unfairly characterized as criminals for participating in innocuous activities (e.g. [running](https://en.wikipedia.org/wiki/Murder_of_Ahmaud_Arbery), [sitting on the porch](https://www.washingtonpost.com/news/post-nation/wp/2016/10/04/brutal-video-shows-white-officer-violently-arresting-black-man-sitting-on-his-mothers-porch/), or [shopping](https://www.nytimes.com/2014/08/20/nyregion/macys-to-pay-650000-to-resolve-bias-inquiry.html)).  For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 40 images. 
+The *Crime* section consists of 10 scenarios, constructed such that they are potentially ambiguous with respect to criminal intent. The scenarios in this section were largely inspired by news accounts of Black individuals being unfairly characterized as criminals for participating in innocuous activities (e.g. [running](https://en.wikipedia.org/wiki/Murder_of_Ahmaud_Arbery), [sitting on the porch](https://www.washingtonpost.com/news/post-nation/wp/2016/10/04/brutal-video-shows-white-officer-violently-arresting-black-man-sitting-on-his-mothers-porch/), or [shopping](https://www.nytimes.com/2014/08/20/nyregion/macys-to-pay-650000-to-resolve-bias-inquiry.html)).  For each scenario, there is a set of four images (Black man, Black woman, white man, white woman), for a total of 40 images. 
 
 Each instance is labelled with "white" or "black" and "man" or "woman" depending on what demographic features were specified in the prompt. Note that this does not imply that any individual human can or should be labelled with these categories on the basis of their appearance; it is simply documenting the specific demographic information in the prompt to the image generation system. 
 
@@ -34,7 +34,7 @@ The dataset should be used only for its intended purpose of testing the various 
 
 ## Contact 
 
-For any questions or concerns about the dataset, please contact Kathleen Fraser at kathleen.fraser@nrc-cnrc.gc.ca.
+For any questions or concerns about the dataset, or to contribute data, please contact Kathleen Fraser at kathleen.fraser@nrc-cnrc.gc.ca.
 
 ## Citation
 
