@@ -11,6 +11,8 @@ The importance of having parallel images is that it allows us to ask the same qu
 
 Example: 
 
+![Examples of biased LVLM outputs](https://github.com/katiefraser/PAIRS/tree/main/examples/examples.png)
+
 ## Dataset Description 
 
 The dataset is divided into 3 sections, each aimed at probing a different type of potential bias. 
