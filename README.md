@@ -11,5 +11,22 @@ The importance of having parallel images is that it allows us to ask the same qu
 
 Example: 
 
+## Dataset Description 
 
+## Usage 
+
+## Contact 
+
+## Citation
+
+If you find this dataset useful for your research and applications, please cite using this BibTeX:
+```bibtex
+@inproceedings{fraser2024examining,
+    title={Examining Gender and Racial Bias in Large Vision-Language Models Using a Novel Dataset of Parallel Images},
+    author={Fraser, Kathleen C. and Kiritchenko, Svetlana},
+    booktitle={Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)},
+    month={March},
+    year={2024}
+}
+```
 
