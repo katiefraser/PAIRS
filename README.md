@@ -9,9 +9,9 @@ Recent advances that link instruction-tuned large language models with image rep
 
 The importance of having parallel images is that it allows us to ask the same questions about highly similar images, with the hypothesis that an unbiased system should output similar answers for similar inputs, while a biased system will change its outputs on the basis of perceived gender or race.
 
-Example: 
+For example, we can use images of different people wearing scrubs to uncover gender bias in a multimodal chatbot:
 
-![Examples of biased LVLM outputs](https://github.com/katiefraser/PAIRS/tree/main/examples/examples.png)
+![Examples of biased LVLM outputs](examples/examples.png)
 
 ## Dataset Description 
 
