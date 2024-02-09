@@ -1,7 +1,7 @@
 # PAIRS
 PAIRS (PArallel Images for eveRyday Scenarios)
 
-This is the repository for the dataset presented in _Examining Gender and Racial Bias in Large Vision–Language Models Using a Novel Dataset of Parallel Images_ by Kathleen C. Fraser and Svetlana Kiritchenko (EACL 2024).
+This is the repository for the dataset presented in [_Examining Gender and Racial Bias in Large Vision–Language Models Using a Novel Dataset of Parallel Images_](https://arxiv.org/abs/2402.05779) by Kathleen C. Fraser and Svetlana Kiritchenko (To appear at EACL 2024).
 
 ## Motivation 
 
