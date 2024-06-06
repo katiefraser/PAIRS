@@ -230,7 +230,7 @@ The dataset is available as of March 1, 2024.
 
 ### Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?
 
-The dataset is freely available for any use. 
+The dataset is available under the [https://creativecommons.org/licenses/by/4.0/](CC-BY Creative Commons Attribution 4.0 International) license.
 
 ### Have any third parties imposed IP-based or other restrictions on the data associated with the instances?
 
